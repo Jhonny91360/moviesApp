@@ -11,7 +11,7 @@ export const useMovies = () => {
 
   useEffect(() => {
     initialLoad();
-  });
+  }, []);
 
   const initialLoad = async () => {
     const nowPlayingPromise = UseCases.moviesNowPlayingUseCase(movieDBFetcher);
