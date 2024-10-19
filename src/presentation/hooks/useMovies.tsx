@@ -35,7 +35,6 @@ export const useMovies = () => {
     setpopular(popularMovies);
 
     setisLoading(false);
-    //console.log({popularMovies: popularMovies[0]});
   };
   return {
     isLoading,
