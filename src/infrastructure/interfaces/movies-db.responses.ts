@@ -27,3 +27,18 @@ export interface Result {
   vote_average: number;
   vote_count: number;
 }
+
+export interface MovieDetailResponse extends Result {
+  overview: string;
+  genres: {
+    id: number;
+    name: string;
+  }[];
+  runtime: number;
+  budget: number;
+  production_companies: {
+    id: number;
+    name: string;
+  }[];
+  original_title: string;
+}
